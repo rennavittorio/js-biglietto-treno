@@ -7,6 +7,10 @@
     align-items: center;
 }
 
+ul, ol, li, menu {
+    list-style: none;
+}
+
 img {
     max-width: 200px;
     display: block;
@@ -29,7 +33,20 @@ img {
     margin-top: 1rem;
 }
 
+.train-ticket .card-title {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
 .train-ticket .ticket-code {
     text-align: center;
     font-size: 2rem;
+}
+
+.ticket__info .list__item-title {
+    font-weight: 700;
+}
+
+.ticket__info li span {
+    font-weight: 400;
 }
