@@ -14,7 +14,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="card">
+                    <div class="card card__custom">
                         <h5 class="ticket-title">
                             Train ticket
                         </h5>
@@ -27,10 +27,10 @@
                                 Bio info
                             </h5>
                             <ul class="ticket__info info__bio">
-                                <li>
+                                <li class="list__item">
                                     <span class="list__item-title">Nome e cognome: </span><span id="current-name">Vittorio Renna</span>
                                 </li>
-                                <li>
+                                <li class="list__item">
                                     <span class="list__item-title">Età: </span><span id="current-age">30 anni</span>
                                 </li>
                             </ul>
@@ -38,20 +38,20 @@
                                 Price info
                             </h5>
                             <ul class="ticket__info info__bio">
-                                <li>
+                                <li class="list__item">
                                     <span class="list__item-title">Km selezionati: </span><span id="current-route">120.00 km</span>
                                 </li>
-                                <li>
-                                    <span class="list__item-title">Prezzo totale: </span><span id="current-price">120 &euro;</span>
+                                <li class="list__item">
+                                    <span class="list__item-title">Prezzo base: </span><span id="current-price">120 &euro;</span>
                                 </li>
-                                <li>
+                                <li class="list__item wrapped">
                                     <span class="list__item-title">Tipo discount: </span><span id="current-discount-type">-</span>
                                 </li>
-                                <li>
+                                <li class="list__item wrapped">
                                     <span class="list__item-title">Discont: </span><span id="current-discount-value">-</span>
                                 </li>
-                                <li>
-                                    <span class="list__item-title">Prezzo totale (con discount): </span><span id="current-total-price"></span>
+                                <li class="list__item">
+                                    <span class="list__item-title">Prezzo totale: </span><span id="current-total-price"></span>
                                 </li>
                             </ul>
                         </div>
@@ -63,6 +63,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <!-- <script src="./app.js"></script> -->
-    <!-- <script src="./bonus/bonus.js"></script> -->
+    <script src="./bonus/bonus.js"></script>
 </body>
 </html>

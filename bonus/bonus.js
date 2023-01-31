@@ -60,8 +60,8 @@ if (ageUser < 18) {
     totalDiscount = parseFloat(totalDiscount);
 
     currentDiscountType.innerHTML = 'Young Promo';
-    currentDiscountValue.innerHTML = '- ' + totalDiscount + ' € (-20%)';
-    currentTotalTicketPrice.innerHTML = totalTicketPrice;
+    currentDiscountValue.innerHTML = '(-20%) ' + '- ' + totalDiscount + ' €';
+    currentTotalTicketPrice.innerHTML = totalTicketPrice + ' €';
 
 } else if (ageUser > 65) {
     totalTicketPrice = parseFloat(ticketPrice * .60).toFixed(2);
@@ -71,8 +71,8 @@ if (ageUser < 18) {
     totalDiscount = parseFloat(totalDiscount);
 
     currentDiscountType.innerHTML = 'Senior Promo';
-    currentDiscountValue.innerHTML = '- ' + totalDiscount + ' € (-40%)';
-    currentTotalTicketPrice.innerHTML = totalTicketPrice;
+    currentDiscountValue.innerHTML = '(-40%) ' + '- ' + totalDiscount + ' €';
+    currentTotalTicketPrice.innerHTML = totalTicketPrice + ' €';
 
 } else {
     totalTicketPrice = ticketPrice; // ALTRI CASI no sconto

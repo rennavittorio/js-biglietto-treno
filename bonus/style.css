@@ -9,6 +9,7 @@
 
 ul, ol, li, menu {
     list-style: none;
+    padding: 0;
 }
 
 img {
@@ -16,15 +17,28 @@ img {
     display: block;
 }
 
-.container,
+/* debug */
+/* .container,
 .row,
 .col {
     border: 2px solid lightslategray;
     padding: 20px;
+} */
+
+.train-ticket .container {
+    max-width: 500px;
+}
+
+.card__custom {
+    border-radius: 50px;
+    background-color: #c41228;
+    color: #f2f2f2;
 }
 
 .train-ticket img {
     margin: 0 auto;
+    background-color: #f2f2f2;
+    border-radius: 20px;
 }
 
 .train-ticket .ticket-title {
@@ -38,15 +52,41 @@ img {
     font-size: 1.5rem;
 }
 
+.train-ticket .card-title::after {
+    content: '';
+    display: block;
+    width: 100%;
+    padding: 2px;
+    background-color: #f2f2f2;
+    margin: 0 auto 30px;
+}
+
 .train-ticket .ticket-code {
     text-align: center;
     font-size: 2rem;
 }
 
-.ticket__info .list__item-title {
+.list__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.list__item .list__item-title {
     font-weight: 700;
+    flex-grow: 1;
+}
+
+.list__item.wrapped * {
+    margin-left: 30px;
+    font-style: italic;
+    font-weight: 400;
 }
 
 .ticket__info li span {
     font-weight: 400;
+}
+
+#current-name {
+    text-transform: capitalize;
 }
